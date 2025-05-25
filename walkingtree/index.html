@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WalkingTrees - Nedungolam Water Sports & Events in Kollam, Kerala</title>
+    <meta name="description" content="WalkingTrees offers thrilling water sports, kayaking, mangrove tunnel tours, canoeing, private pool kayaking, and venue spaces in Nedungolam, Paravoor, Kollam, Kerala. Your adventure near Varkala awaits at walkingtrees.in!">
+    <meta name="keywords" content="walkingtrees.in, kayaking kerala, kayaking varkala, kayaking kollam, kayaking nedungolam, water sports kollam, mangrove tunnel kayaking, canoeing kerala, country boat ride, private pool kayaking, adventure sports kerala, events venue kerala">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-background-main-website shadow-md py-4 fixed w-full z-50">
+        <div class="bg-primary-dark text-white text-sm py-2 px-4">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-4 mb-2 md:mb-0">
+                    <a href="mailto:walkingtrees@gmail.com" class="hover:underline flex items-center text-white-on-dark">
+                        <i class="fas fa-envelope mr-2"></i> walkingtrees@gmail.com
+                    </a>
+                    <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I would like to make a call." target="_blank" rel="noopener noreferrer" class="hover:underline flex items-center text-white-on-dark">
+                        <i class="fas fa-phone mr-2"></i> Call Us: 9354472161
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-white-on-dark">Stay connected:</span>
+                    <a href="https://www.facebook.com/walkingtrees.in" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/walkingtrees.in" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9354472161" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-discord"></i> </a>
+                </div>
+            </div>
+        </div>
+        <nav class="container mx-auto flex justify-between items-center px-4 py-2">
+            <a href="#" class="text-2xl font-bold">
+                <span class="text-white-logo">WALKING</span><span class="text-trees-logo">TREES</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="#home" class="text-nav-link hover:text-primary transition-colors duration-300">Home</a>
+                <a href="#watersports" class="text-nav-link hover:text-primary transition-colors duration-300">Water Sports</a>
+                <a href="#venues" class="text-nav-link hover:text-primary transition-colors duration-300">Venues</a>
+                <a href="#sightseeing" class="text-nav-link hover:text-primary transition-colors duration-300">Sightseeing</a>
+                <a href="./gallery.html" class="text-nav-link hover:text-primary transition-colors duration-300">Gallery</a>
+                <a href="./about.html" class="text-nav-link hover:text-primary transition-colors duration-300">About Us</a>
+                <a href="#contact" class="text-nav-link hover:text-primary transition-colors duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-nav-link hover:text-primary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden bg-background-main-website shadow-lg py-2 mt-2 hidden">
+            <a href="#home" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Home</a>
+            <a href="#watersports" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Water Sports</a>
+            <a href="#venues" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Venues</a>
+            <a href="#sightseeing" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Sightseeing</a>
+            <a href="./gallery.html" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Gallery</a>
+            <a href="./about.html" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">About Us</a>
+            <a href="#contact" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="relative h-screen flex items-center justify-center text-white text-center overflow-hidden">
+            <div id="hero-background-carousel" class="absolute inset-0">
+                <img src="./images/banner-1.jpg" alt="Kayaking in serene backwaters of Nedungolam" class="hero-bg-image active">
+                <img src="./images/banner-2.jpg" alt="Scenic backwater views with traditional boat in Kollam" class="hero-bg-image">
+                <img src="./images/banner-3.jpg" alt="Group enjoying water activities at WalkingTrees" class="hero-bg-image">
+            </div>
+
+            <div class="absolute inset-0 bg-black opacity-30"></div> 
+
+            <div class="relative z-10 p-4 w-full max-w-4xl">
+                <div id="hero-text-carousel" class="hero-text-wrapper">
+                    <div class="hero-slide active">
+                        <h1 class="text-4xl md:text-6xl font-light mb-2 leading-tight animate-fade-in text-hero-heading">Experience Kerala's Backwater Bliss</h1>
+                        <p class="text-lg md:text-xl font-normal mb-6 animate-fade-in delay-1 text-hero-paragraph">Kayaking, Canoeing & Unforgettable Moments in Nedungolam</p>
+                        <a href="#watersports" class="btn-primary text-lg animate-fade-in delay-2">Explore Adventures</a>
+                    </div>
+                    <div class="hero-slide">
+                        <h1 class="text-4xl md:text-6xl font-light mb-2 leading-tight animate-fade-in text-hero-heading">Discover Serenity. Embrace Adventure.</h1>
+                        <p class="text-lg md:text-xl font-normal mb-6 animate-fade-in delay-1 text-hero-paragraph">Your Perfect Getaway in Kollam, Near Varkala</p>
+                        <a href="#venues" class="btn-primary text-lg animate-fade-in delay-2">Plan Your Event</a>
+                    </div>
+                    <div class="hero-slide">
+                        <h1 class="text-4xl md:text-6xl font-light mb-2 leading-tight animate-fade-in text-hero-heading">Unwind. Explore. Connect.</h1>
+                        <p class="text-lg md:text-xl font-normal mb-6 animate-fade-in delay-1 text-hero-paragraph">WalkingTrees: Where Nature Meets Joy</p>
+                        <a href="#sightseeing" class="btn-primary text-lg animate-fade-in delay-2">See Local Gems</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="watersports" class="py-16 bg-background-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-normal text-center mb-12 text-primary">Our Exciting Water Sports Packages</h2>
+                <div class="carousel-container relative">
+                    <div class="carousel-wrapper" id="watersports-carousel-wrapper">
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="./images/kayaking-bg.jpg" alt="Kayaking" class="w-full h-32 object-cover rounded-md mb-3" onerror="this.src='https://placehold.co/400x128/4A90E2/ffffff?text=Kayaking'">
+                                <h3 class="text-xl font-normal text-primary mb-1">Kayaking</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 500</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Glide through the serene backwaters of Nedungolam. Perfect for all skill levels, offering breathtaking views and a peaceful escape.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Kayaking." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Mangrove+Tunnel" alt="Mangrove Tunnel Kayaking" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Mangrove Tunnel Kayaking</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 700</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">An exclusive adventure! Paddle through natural mangrove tunnels, a unique ecological attraction of Nedungolam.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Mangrove%20Tunnel%20Kayaking." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="./images/canoeing-bg.jpg" alt="Canoeing" class="w-full h-32 object-cover rounded-md mb-3" onerror="this.src='https://placehold.co/400x128/4A90E2/ffffff?text=Canoeing'">
+                                <h3 class="text-xl font-normal text-primary mb-1">Canoeing</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 600</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Enjoy a traditional canoeing experience, ideal for families and groups looking for a leisurely ride on the backwaters.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Canoeing." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Country+Boat+Ride" alt="Country Boat Ride" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Country Boat Ride</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 900</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Experience the rustic charm of Kerala with a traditional country boat ride, exploring hidden canals and local life.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Country%20Boat%20Ride." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Private+Pool+Kayaking" alt="Private Pool Kayaking" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Private Pool Kayaking</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 1200</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Unlimited kayaking fun in a private pool setting, complete with a complimentary meal. Perfect for practice or exclusive enjoyment.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Private%20Pool%20Kayaking." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Angling+Spots" alt="Angling Spots" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Angling Spots</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 800</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Discover prime angling spots in the backwaters. A relaxing activity for fishing enthusiasts of all ages.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Angling%20Spots." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Zip+Line" alt="Zip Line" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Zip Line Adventure</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 1000</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Soar above the landscape with our thrilling zip line! An exhilarating experience offering panoramic views.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Zip%20Line." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Sunset+Kayaking" alt="Sunset Kayaking" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Sunset Kayaking</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 750</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Experience the magical hues of a Kerala sunset from your kayak, a truly serene and unforgettable moment.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Sunset%20Kayaking." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Sunrise+Kayaking" alt="Sunrise Kayaking" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Sunrise Kayaking</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 750</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Greet the day with a peaceful sunrise kayaking session, witnessing the backwaters come alive with golden light.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Sunrise%20Kayaking." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Book Now on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-myrtle-green-dark focus:outline-none" onclick="updateCarousel('watersports-carousel-wrapper', -1)">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-myrtle-green-dark focus:outline-none" onclick="updateCarousel('watersports-carousel-wrapper', 1)">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="venues" class="py-16 bg-background-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-normal text-center mb-12 text-primary">Host Your Events with Us</h2>
+                <div class="carousel-container relative">
+                    <div class="carousel-wrapper" id="venues-carousel-wrapper">
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Ceremonies" alt="Ceremonies Venue" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Intimate Ceremonies</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 5000</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Our serene location is perfect for small, intimate ceremonies, surrounded by nature's beauty.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Venue%20for%20Ceremonies." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Parties" alt="Parties Venue" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Celebratory Parties</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 7000</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Host memorable parties with stunning backwater views, tailored to your celebration needs.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Venue%20for%20Parties." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Corporate+Events" alt="Corporate Events Venue" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Corporate Retreats</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 10000</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Inspire your team with a refreshing corporate event amidst nature, fostering creativity and collaboration.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Venue%20for%20Corporate%20Events." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Family+Gatherings" alt="Family Gatherings Venue" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Family Gatherings</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Starts from Rs. 8000</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Create lasting memories with family gatherings in our scenic and welcoming environment.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Venue%20for%20Family%20Gatherings." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-myrtle-green-dark focus:outline-none" onclick="updateCarousel('venues-carousel-wrapper', -1)">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-myrtle-green-dark focus:outline-none" onclick="updateCarousel('venues-carousel-wrapper', 1)">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sightseeing" class="py-16 bg-background-light">
+            <div class="container mx-auto px-4">
+                <h2 class="text-4xl font-normal text-center mb-12 text-primary">Explore Local Gems</h2>
+                <div class="carousel-container relative">
+                    <div class="carousel-wrapper" id="sightseeing-carousel-wrapper">
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Polachira" alt="Polachira Bird Sanctuary" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Polachira Wetlands</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Tour Price: Rs. 300</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">A serene wetland ecosystem, perfect for birdwatching and enjoying the tranquil natural beauty.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Polachira%20Wetlands%20Tour." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Puttingal+Temple" alt="Puttingal Temple" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Puttingal Temple</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Visit Price: Rs. 100</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">A historic temple known for its annual fireworks festival and rich cultural significance.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Puttingal%20Temple%20Visit." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Kappil+Beach" alt="Kappil Beach" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Kappil Beach & Backwaters</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Tour Price: Rs. 400</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">Where the lake meets the sea, offering stunning views and a tranquil beach experience.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Kappil%20Beach%20Tour." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="carousel-card bg-card-background shadow-sm p-4 flex flex-col h-full border border-gray-border-subtle">
+                                <img src="https://placehold.co/400x128/4A90E2/ffffff?text=Mukkam+Beach" alt="Mukkam Beach" class="w-full h-32 object-cover rounded-md mb-3">
+                                <h3 class="text-xl font-normal text-primary mb-1">Mukkam Beach</h3>
+                                <p class="text-text-on-light text-base font-normal mb-2">Visit Price: Rs. 250</p>
+                                <p class="text-text-secondary text-sm flex-grow mb-3">A pristine and less crowded beach, ideal for relaxation and enjoying the coastal breeze.</p>
+                                <a href="https://wa.me/9354472161?text=Hello WalkingTrees! I am interested in Mukkam%20Beach%20Visit." target="_blank" rel="noopener noreferrer" class="btn-primary text-center text-sm mt-auto">Enquire on WhatsApp</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="absolute left-0 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-myrtle-green-dark focus:outline-none" onclick="updateCarousel('sightseeing-carousel-wrapper', -1)">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path></svg>
+                    </button>
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2 bg-primary text-white p-3 rounded-full shadow-lg hover:bg-myrtle-green-dark focus:outline-none" onclick="updateCarousel('sightseeing-carousel-wrapper', 1)">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-16 bg-primary-dark text-white">
+            <div class="container mx-auto px-4 text-center">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                    <div class="flex flex-col items-center md:items-start space-y-4 mb-8 md:mb-0 text-left">
+                        <h2 class="text-4xl font-normal mb-4 text-white-on-dark">Contact Us</h2>
+                        <p class="text-contact-content mb-4 text-white-on-dark">Have questions or ready to book your adventure? Reach out to us!</p>
+                        <p class="text-contact-content text-white-on-dark">WhatsApp: <a href="https://wa.me/9354472161" target="_blank" rel="noopener noreferrer" class="text-white-on-dark hover:underline transition-colors duration-300">9354472161</a></p>
+                        <p class="text-contact-content text-white-on-dark">Email: <a href="mailto:walkingtrees@gmail.com" class="text-white-on-dark hover:underline transition-colors duration-300">walkingtrees@gmail.com</a></p>
+                        <p class="text-contact-content text-white-on-dark">Location: Nedungolam, Paravoor, Kollam, Kerala</p>
+                    </div>
+                    <div class="w-full rounded-lg overflow-hidden shadow-lg flex justify-center items-center">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3943.766324227916!2d76.7118320745638!3d8.82608409188047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b05f2420a320387%3A0x889a7146522c7104!2sNedungolam%2C%20Kerala!5e0!3m2!1sen!2sin!4v1701345600000!5m2!1sen!2sin"
+                            width="100%"
+                            height="250"
+                            style="border:0;"
+                            allowfullscreen=""
+                            loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-dark text-white-on-dark py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-footer-small">© 2025 WalkingTrees. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="text-footer-smaller hover:text-white-on-dark transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="text-footer-smaller hover:text-white-on-dark transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for smooth scrolling when clicking navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default anchor click behavior
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) { // Only smooth scroll if it's an internal anchor
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth' // Smooth scroll to the target section
+                    });
+                } else { // For external links (like to gallery.html or about.html)
+                    window.location.href = targetId;
+                }
+                // Close mobile menu after clicking a link (if open)
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Hero Banner Carousel Functionality
+        let heroSlideIndex = 0;
+        const heroTextSlides = document.querySelectorAll('#hero-text-carousel .hero-slide');
+        const heroBackgroundImages = document.querySelectorAll('#hero-background-carousel .hero-bg-image');
+        const totalHeroSlides = heroTextSlides.length;
+
+        function showHeroSlide(index) {
+            // Hide all text slides and remove animation classes
+            heroTextSlides.forEach((slide) => {
+                slide.classList.remove('active');
+                slide.querySelectorAll('.animate-fade-in').forEach(el => {
+                    el.style.animation = 'none';
+                    el.offsetHeight; /* trigger reflow */
+                    el.style.animation = null;
+                });
+            });
+
+            // Hide all background images
+            heroBackgroundImages.forEach((img) => {
+                img.classList.remove('active');
+            });
+
+            // Show the current text slide and apply animations
+            heroTextSlides[index].classList.add('active');
+            heroTextSlides[index].querySelectorAll('.animate-fade-in').forEach(el => {
+                el.classList.add('animate-fade-in');
+            });
+
+            // Show the current background image
+            heroBackgroundImages[index].classList.add('active');
+        }
+
+        function nextHeroSlide() {
+            heroSlideIndex = (heroSlideIndex + 1) % totalHeroSlides;
+            showHeroSlide(heroSlideIndex);
+        }
+
+        // Start hero carousel on load
+        window.addEventListener('load', () => {
+            showHeroSlide(heroSlideIndex); // Show initial slide
+            setInterval(nextHeroSlide, 7000); // Change slide every 7 seconds
+        });
+
+
+        // General Carousel functionality (for watersports, venues, sightseeing)
+        let watersportsCurrentIndex = 0;
+        let venuesCurrentIndex = 0;
+        let sightseeingCurrentIndex = 0;
+
+        /**
+         * Determines how many carousel items should be visible based on screen width.
+         * @returns {number} Number of items to display per view.
+         */
+        function getItemsPerView() {
+            if (window.innerWidth <= 640) { // Small screens (e.g., mobile portrait)
+                return 1;
+            } else if (window.innerWidth <= 768) { // Medium screens (e.g., mobile landscape, small tablets)
+                return 2;
+            } else if (window.innerWidth <= 1024) { // Large screens (e.g., tablets, small laptops)
+                return 3;
+            } else { // Extra large screens (e.g., desktops)
+                return 4;
+            }
+        }
+
+        /**
+         * Updates the position of a given carousel.
+         * @param {string} wrapperId - The ID of the carousel wrapper element (e.g., 'watersports-carousel-wrapper').
+         * @param {number} direction - The direction to scroll (-1 for previous, 1 for next, 0 for no scroll/re-align).
+         */
+        function updateCarousel(wrapperId, direction) {
+            const wrapper = document.getElementById(wrapperId);
+            if (!wrapper) {
+                console.error(`Carousel wrapper with ID '${wrapperId}' not found.`);
+                return;
+            }
+
+            const items = Array.from(wrapper.children);
+            const totalItems = items.length;
+            const itemsPerView = getItemsPerView();
+
+            // IMPORTANT: Update CSS variable dynamically to ensure correct item width
+            wrapper.style.setProperty('--items-per-view', itemsPerView);
+
+            let currentCarouselIndex;
+            if (wrapperId === 'watersports-carousel-wrapper') {
+                currentCarouselIndex = watersportsCurrentIndex;
+            } else if (wrapperId === 'venues-carousel-wrapper') {
+                currentCarouselIndex = venuesCurrentIndex;
+            } else if (wrapperId === 'sightseeing-carousel-wrapper') {
+                currentCarouselIndex = sightseeingCurrentIndex;
+            }
+
+            // Calculate the maximum index for the first visible item
+            // This ensures we don't scroll past the point where the last item is visible
+            // If totalItems <= itemsPerView, maxIndex will be 0, preventing scrolling.
+            const maxIndex = Math.max(0, totalItems - itemsPerView);
+
+            // Calculate the new index
+            currentCarouselIndex += direction;
+
+            // Handle looping and boundary conditions
+            if (currentCarouselIndex > maxIndex) {
+                currentCarouselIndex = 0; // Loop back to the start
+            } else if (currentCarouselIndex < 0) {
+                currentCarouselIndex = maxIndex; // Loop to the end
+            }
+
+            // Update the global index
+            if (wrapperId === 'watersports-carousel-wrapper') {
+                watersportsCurrentIndex = currentCarouselIndex;
+            } else if (wrapperId === 'venues-carousel-wrapper') {
+                venuesCurrentIndex = currentCarouselIndex;
+            } else if (wrapperId === 'sightseeing-carousel-wrapper') {
+                sightseeingCurrentIndex = currentCarouselIndex;
+            }
+
+            // Apply the transform
+            const translateXValue = currentCarouselIndex * (100 / itemsPerView);
+            wrapper.style.transform = `translateX(-${translateXValue}%)`;
+        }
+
+
+        // Initialize carousel positions on page load
+        window.addEventListener('load', () => {
+            updateCarousel('watersports-carousel-wrapper', 0); // Initialize water sports carousel
+            updateCarousel('venues-carousel-wrapper', 0);     // Initialize venues carousel
+            updateCarousel('sightseeing-carousel-wrapper', 0); // Initialize sightseeing carousel
+        });
+
+        // Re-align carousels on window resize to adjust for changing `itemsPerView`
+        window.addEventListener('resize', () => {
+            updateCarousel('watersports-carousel-wrapper', 0); // Re-align water sports carousel
+            updateCarousel('venues-carousel-wrapper', 0);     // Re-align venues carousel
+            updateCarousel('sightseeing-carousel-wrapper', 0); // Re-align sightseeing carousel
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,343 @@
+/* css/style.css */
+
+/* Import Google Font - Ubuntu */
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
+
+/* Define the new minimalist color palette using CSS variables */
+:root {
+    --color-eerie-black: #17252A; /* Darkest shade for text, buttons, logo part */
+    --color-myrtle-green-dark: #2B7A78; /* Darker green for accents */
+    --color-myrtle-green: #3AAFA9; /* Main background color, logo background */
+    --color-light-cyan: #DEF2F1; /* Light background for sections, subtle borders */
+    --color-white-on-dark: #FEFFFF; /* White for text on dark backgrounds, logo part */
+    --color-card-background: #EAE7DC; /* New background for carousel items */
+}
+
+/* Base Styles for the entire website */
+html {
+    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif; /* Apply Ubuntu font */
+    color: var(--color-eerie-black); /* Default text color */
+    background-color: var(--color-myrtle-green); /* Main website background color */
+    line-height: 1.6; /* Improved readability */
+    margin: 0; /* Remove default body margin */
+}
+
+/* Headings Styling */
+h1, h2, h3, h4, h5, h6 {
+    color: var(--color-eerie-black); /* Headings in eerie black for strong contrast */
+    font-weight: 400; /* Sleek, thinner font for all headings */
+}
+
+/* Custom Utility Classes for new color palette */
+.text-primary {
+    color: var(--color-eerie-black); /* Primary text color for headings, etc. */
+}
+
+.bg-primary {
+    background-color: var(--color-eerie-black); /* Primary button background */
+}
+
+.bg-primary-dark {
+    background-color: var(--color-myrtle-green-dark); /* Darker green for top strip/contact */
+}
+
+.bg-background-main-website {
+    background-color: var(--color-myrtle-green); /* Main website background */
+}
+
+.bg-background-light {
+    background-color: var(--color-light-cyan); /* Light background for sections */
+}
+
+.text-white-on-dark {
+    color: var(--color-white-on-dark); /* Text color for elements on dark backgrounds */
+}
+
+.text-text-on-light {
+    color: var(--color-eerie-black); /* Text color for elements on light backgrounds */
+}
+
+.text-text-secondary {
+    color: var(--color-eerie-black); /* Secondary text color, same as main text for minimalism */
+    font-weight: 300; /* Thinner font for secondary text */
+}
+
+.border-gray-border-subtle {
+    border-color: var(--color-light-cyan); /* Subtle border color */
+}
+
+/* Logo specific colors */
+.text-white-logo {
+    color: var(--color-white-on-dark); /* WALKING part of the logo */
+    background-color: var(--color-myrtle-green); /* Background for WALKING part */
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.25rem;
+}
+
+.text-trees-logo {
+    color: var(--color-eerie-black); /* TREES part of the logo */
+    background-color: var(--color-myrtle-green); /* Background for TREES part */
+    padding: 0.1rem 0.2rem;
+    border-radius: 0.25rem;
+}
+
+/* Navigation Link Colors */
+.text-nav-link {
+    color: var(--color-eerie-black); /* Default navigation link color */
+}
+
+.text-nav-link-mobile {
+    color: var(--color-eerie-black); /* Mobile navigation link color */
+}
+
+
+/* Primary Button Styling */
+.btn-primary {
+    background-color: var(--color-eerie-black); /* Button background */
+    color: var(--color-white-on-dark); /* Button text color */
+    padding: 0.6rem 1.2rem; /* Adjusted padding for a less bulky feel */
+    border-radius: 0.25rem; /* Square button with slight rounding */
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease; /* Smooth hover transition */
+    display: inline-block; /* Allows padding and width to be set */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: 500; /* Medium bold text for minimalist feel */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-myrtle-green-dark); /* Darker green on hover */
+    transform: translateY(-1px); /* Slight lift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Slightly more prominent shadow */
+}
+
+/* Hero Section Background Images */
+.hero-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image covers the entire area */
+    z-index: -1; /* Puts image behind content */
+    opacity: 0; /* Hidden by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+}
+
+.hero-bg-image.active {
+    opacity: 1; /* Make active image visible */
+}
+
+
+/* Hero Text Carousel Styles */
+.hero-text-wrapper {
+    position: relative;
+    height: 220px; /* Adjusted height for desktop */
+    display: flex; /* Use flexbox to stack slides vertically */
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflowing slides */
+}
+
+.hero-slide {
+    position: absolute; /* Position slides on top of each other */
+    width: 100%;
+    text-align: center;
+    opacity: 0; /* Hidden by default */
+    transition: opacity 1s ease-in-out; /* Smooth fade transition */
+    pointer-events: none; /* Prevent interaction when not active */
+}
+
+.hero-slide.active {
+    opacity: 1; /* Make active slide visible */
+    pointer-events: auto; /* Allow interaction when active */
+}
+
+/* Hero Heading and Paragraph Specific Styles for Readability */
+.text-hero-heading {
+    color: var(--color-white-on-dark); /* Ensure white text on banner */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Add text shadow for readability */
+}
+
+.text-hero-paragraph {
+    color: var(--color-white-on-dark); /* Ensure white text on banner */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6); /* Add text shadow for readability */
+}
+
+
+/* Keyframe animation for fade-in effect */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+    animation: fadeIn 1s ease-out forwards;
+}
+
+.animate-fade-in.delay-1 {
+    animation-delay: 0.3s; /* Delay for paragraph */
+}
+
+.animate-fade-in.delay-2 {
+    animation-delay: 0.6s; /* Delay for button */
+}
+
+
+/* Carousel Specific Styles (for watersports, venues, sightseeing) */
+.carousel-container {
+    overflow: hidden; /* Hides parts of carousel items that are not in view */
+    position: relative; /* Needed for absolute positioning of navigation buttons */
+    padding: 0 3rem; /* Added padding to ensure buttons are visible and not overlapping */
+}
+
+.carousel-wrapper {
+    display: flex; /* Arranges items in a row */
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+    /* Dynamically set via JS: --items-per-view: 4; */
+    width: 100%; /* Ensure wrapper takes full width to allow flex-basis to work */
+}
+
+.carousel-item {
+    flex: 0 0 calc(100% / var(--items-per-view));
+    padding: 0.75rem; /* Padding around each carousel card */
+    box-sizing: border-box; /* Include padding in the element's total width */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.carousel-item .carousel-card { /* New class for the inner card of carousel items */
+    background-color: var(--color-card-background); /* Cards background color */
+    padding: 1rem; /* Inner padding for carousel cards content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* Lighter shadow */
+    border: 1px solid var(--color-gray-border); /* Subtle border */
+    border-radius: 0.25rem; /* Apply border-radius here for square look */
+    aspect-ratio: 1 / 1; /* Maintain 1:1 aspect ratio for square boxes */
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Allow height to adjust based on aspect-ratio */
+    min-height: 350px; /* Increased min-height to prevent clipping on smaller content */
+    padding-bottom: 1rem; /* Ensure padding at the bottom for button */
+}
+
+.carousel-item .carousel-card img {
+    height: 128px; /* Fixed height for images to ensure consistency (h-32 in Tailwind) */
+    width: 100%; /* Ensure image fills its container width */
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    border-radius: 0.25rem; /* Maintain slight rounded corners for images */
+    margin-bottom: 0.75rem; /* Add some space below image */
+}
+
+.carousel-item .carousel-card h3 {
+    margin-bottom: 0.25rem; /* Reduce space below heading */
+}
+
+.carousel-item .carousel-card p.text-base { /* Price paragraph */
+    margin-bottom: 0.5rem; /* Space below price */
+}
+
+.carousel-item .carousel-card p.text-sm { /* Description paragraph */
+    flex-grow: 1; /* Allow description to take available space */
+    overflow-y: auto; /* Add scrollbar if content overflows */
+    max-height: 80px; /* Limit description height to prevent pushing button */
+    margin-bottom: 0.75rem; /* Space before button */
+    font-weight: 300; /* Sleek font for description */
+}
+
+.carousel-item .carousel-card .btn-primary {
+    margin-top: auto; /* Push button to the bottom */
+}
+
+
+/* Carousel Navigation Buttons */
+.carousel-container button {
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    background-color: var(--color-eerie-black); /* Buttons in eerie black */
+    color: var(--color-white-on-dark); /* Button text in white */
+}
+
+.carousel-container button:hover {
+    transform: scale(1.05); /* Slight scale on hover for buttons */
+    background-color: var(--color-myrtle-green-dark); /* Darker green on hover */
+}
+
+/* Contact Section Specific Styles */
+.text-contact-content {
+    font-size: 1rem; /* Smaller font for general contact content */
+    font-weight: 300; /* Thinner font */
+}
+
+/* Footer Specific Styles */
+.text-footer-small {
+    font-size: 0.875rem; /* Smaller font for copyright */
+    font-weight: 300;
+}
+
+.text-footer-smaller {
+    font-size: 0.75rem; /* Even smaller font for policy links */
+    font-weight: 300;
+}
+
+
+/* Responsive adjustments for carousel based on screen size */
+@media (max-width: 1024px) { /* Tailwind 'lg' breakpoint */
+    .carousel-wrapper {
+        --items-per-view: 3; /* Show 3 items on medium-large screens */
+    }
+    .carousel-item .carousel-card {
+        min-height: 320px; /* Adjust min-height for medium screens */
+    }
+}
+
+@media (max-width: 768px) { /* Tailwind 'md' breakpoint */
+    .carousel-wrapper {
+        --items-per-view: 2; /* Show 2 items on tablets */
+    }
+    .carousel-container {
+        padding: 0 2rem; /* Adjust padding on tablets */
+    }
+    .hero-text-wrapper {
+        height: 200px; /* Adjusted height for medium screens */
+    }
+    .carousel-item .carousel-card {
+        min-height: 380px; /* Adjust min-height for tablets */
+    }
+}
+
+@media (max-width: 640px) { /* Tailwind 'sm' breakpoint */
+    .carousel-wrapper {
+        --items-per-view: 1; /* Show 1 item on small mobile screens */
+    }
+    .carousel-container {
+        padding: 0 1rem; /* Reduce padding on very small screens */
+    }
+    .hero-text-wrapper {
+        height: 170px; /* Further adjusted height for mobile */
+    }
+    .carousel-item .carousel-card {
+        min-height: 400px; /* Adjust min-height for mobile */
+    }
+}
+
+/* Additional general responsive adjustments */
+@media (max-width: 768px) {
+    .text-4xl { font-size: 2.5rem; } /* Adjusted from 3rem */
+    .text-2xl { font-size: 1.5rem; }
+    .text-xl { font-size: 1.125rem; }
+    .text-lg { font-size: 1rem; }
+}
+
+@media (max-width: 480px) {
+    .text-4xl { font-size: 2rem; } /* Adjusted from 2.5rem */
+    .text-2xl { font-size: 1.25rem; }
+    .text-xl { font-size: 1rem; }
+    .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+}

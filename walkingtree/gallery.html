@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - WalkingTrees</title>
+    <meta name="description" content="Explore our gallery of thrilling water sports, serene landscapes, and memorable events at WalkingTrees in Nedungolam, Kerala.">
+    <meta name="keywords" content="walkingtrees gallery, kerala photos, water sports images, nedungolam pictures, event venue photos">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="bg-background-main-website shadow-md py-4 fixed w-full z-50">
+        <div class="bg-primary-dark text-white text-sm py-2 px-4">
+            <div class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center space-x-4 mb-2 md:mb-0">
+                    <a href="mailto:walkingtrees@gmail.com" class="hover:underline flex items-center text-white-on-dark">
+                        <i class="fas fa-envelope mr-2"></i> walkingtrees@gmail.com
+                    </a>
+                    <a href="tel:9354472161" class="hover:underline flex items-center text-white-on-dark">
+                        <i class="fas fa-phone mr-2"></i> Call Us: 9354472161
+                    </a>
+                </div>
+                <div class="flex items-center space-x-4">
+                    <span class="text-white-on-dark">Stay connected:</span>
+                    <a href="https://www.facebook.com/walkingtrees.in" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://www.instagram.com/walkingtrees.in" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://wa.me/9354472161" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                    <a href="#" target="_blank" class="hover:text-gray-300 transition-colors duration-300 text-white-on-dark">
+                        <i class="fab fa-discord"></i> </a>
+                </div>
+            </div>
+        </div>
+        <nav class="container mx-auto flex justify-between items-center px-4 py-2">
+            <a href="./index.html" class="text-2xl font-bold">
+                <span class="text-white-logo">WALKING</span><span class="text-trees-logo">TREES</span>
+            </a>
+            <div class="hidden md:flex space-x-6">
+                <a href="./index.html#home" class="text-nav-link hover:text-primary transition-colors duration-300">Home</a>
+                <a href="./index.html#watersports" class="text-nav-link hover:text-primary transition-colors duration-300">Water Sports</a>
+                <a href="./index.html#venues" class="text-nav-link hover:text-primary transition-colors duration-300">Venues</a>
+                <a href="./index.html#sightseeing" class="text-nav-link hover:text-primary transition-colors duration-300">Sightseeing</a>
+                <a href="./gallery.html" class="text-nav-link hover:text-primary transition-colors duration-300">Gallery</a>
+                <a href="./about.html" class="text-nav-link hover:text-primary transition-colors duration-300">About Us</a>
+                <a href="./index.html#contact" class="text-nav-link hover:text-primary transition-colors duration-300">Contact</a>
+            </div>
+            <button id="mobile-menu-button" class="md:hidden text-nav-link hover:text-primary focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="md:hidden bg-background-main-website shadow-lg py-2 mt-2 hidden">
+            <a href="./index.html#home" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Home</a>
+            <a href="./index.html#watersports" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Water Sports</a>
+            <a href="./index.html#venues" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Venues</a>
+            <a href="./index.html#sightseeing" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Sightseeing</a>
+            <a href="./gallery.html" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Gallery</a>
+            <a href="./about.html" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">About Us</a>
+            <a href="./index.html#contact" class="block px-4 py-2 text-nav-link-mobile hover:bg-background-light transition-colors duration-300">Contact</a>
+        </div>
+    </header>
+
+    <main class="pt-32 pb-16 bg-background-light"> <section id="gallery-content" class="container mx-auto px-4">
+            <h2 class="text-4xl font-normal text-center mb-12 text-primary">Our Gallery</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                <div class="gallery-item bg-card-background rounded-lg shadow-sm overflow-hidden border border-gray-border-subtle">
+                    <img src="https://placehold.co/600x400/DEF2F1/17252A?text=Gallery+Image+1" alt="Gallery Image 1" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-text-on-light text-sm font-normal">Kayaking through the mangroves.</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-card-background rounded-lg shadow-sm overflow-hidden border border-gray-border-subtle">
+                    <img src="https://placehold.co/600x400/DEF2F1/17252A?text=Gallery+Image+2" alt="Gallery Image 2" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-text-on-light text-sm font-normal">Sunset views from the backwaters.</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-card-background rounded-lg shadow-sm overflow-hidden border border-gray-border-subtle">
+                    <img src="https://placehold.co/600x400/DEF2F1/17252A?text=Gallery+Image+3" alt="Gallery Image 3" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-text-on-light text-sm font-normal">Family fun on a country boat ride.</p>
+                    </div>
+                </div>
+                <div class="gallery-item bg-card-background rounded-lg shadow-sm overflow-hidden border border-gray-border-subtle">
+                    <img src="https://placehold.co/600x400/DEF2F1/17252A?text=Gallery+Image+4" alt="Gallery Image 4" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <p class="text-text-on-light text-sm font-normal">Thrilling zip line adventure.</p>
+                    </div>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    <footer class="bg-primary-dark text-white-on-dark py-6 text-center">
+        <div class="container mx-auto px-4">
+            <p class="text-footer-small">© 2025 WalkingTrees. All rights reserved.</p>
+            <div class="flex justify-center space-x-4 mt-2">
+                <a href="#" class="text-footer-smaller hover:text-white-on-dark transition-colors duration-300">Privacy Policy</a>
+                <a href="#" class="text-footer-smaller hover:text-white-on-dark transition-colors duration-300">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // JavaScript for mobile menu toggle
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // JavaScript for smooth scrolling when clicking navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault(); // Prevent default anchor click behavior
+                const targetId = this.getAttribute('href');
+                if (targetId.startsWith('#')) { // Only smooth scroll if it's an internal anchor
+                    document.querySelector(targetId).scrollIntoView({
+                        behavior: 'smooth' // Smooth scroll to the target section
+                    });
+                } else { // For external links (like to gallery.html or about.html)
+                    window.location.href = targetId;
+                }
+                // Close mobile menu after clicking a link (if open)
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
